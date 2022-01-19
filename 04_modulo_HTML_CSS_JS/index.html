@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simulador de financiamento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <h1>Simulador de financiamento</h1>
+    <div class="campos">
+      <div class="blocoCampo">
+        <label for="valor">Valor</label>
+        <input id="valor" type="number" value="200000" />
+      </div>
+      <div class="blocoCampo">
+        <label for="prazoanos">Prazo (anos)</label>
+        <input id="prazoanos" type="number" value="20" />
+      </div>
+      <div class="blocoCampo">
+        <label for="jurosaa">Juros ao ano</label>
+        <input id="jurosaa" type="number" value="0.08" />
+      </div>
+      <div class="blocoCampo">
+        <button onclick="simula()">Simular</button>
+      </div>
+    </div>
+
+    <div>
+      <h2>Resultado</h2>
+      <div class="campos">
+        <div class="blocoCampo">
+          <label for="prazomeses">Prazo (meses)</label>
+          <input id="prazomeses" type="number" readonly />
+        </div>
+        <div class="blocoCampo">
+          <label for="jurosam">Juros ao mês</label>
+          <input id="jurosam" type="number" readonly />
+        </div>
+        <div class="blocoCampo">
+          <label for="jurosacumulados">Juros acumulados</label>
+          <input id="jurosacumulados" type="number" readonly />
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Prestação</th>
+            <th>Amortização</th>
+            <th>Juros</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="simulador.js"></script>
+  </body>
+</html>

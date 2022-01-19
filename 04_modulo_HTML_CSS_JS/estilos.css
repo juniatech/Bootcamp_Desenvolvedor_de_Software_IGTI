@@ -1,0 +1,20 @@
+body {
+  font-family: Arial;
+}
+
+.campos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blocoCampo {
+  padding: 8px;
+  flex: 1 1 80px;
+}
+
+.blocoCampo label {
+  display: block;
+}
+.blocoCampo input {
+  width: 100%;
+}
